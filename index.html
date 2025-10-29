@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdmonCundech</title>
+    <link rel="icon" href="img/favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <style>
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('img/hero.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .career-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50 antialiased">
+    <nav class="bg-blue-900 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i data-feather="book-open" class="text-yellow-400"></i>
+                <span class="font-bold text-xl">AdmonCundech</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#inicio" class="hover:text-yellow-400 transition duration-300">Inicio</a>
+                <a href="#carreras" class="hover:text-yellow-400 transition duration-300">Carreras</a>
+                <a href="#noticias" class="hover:text-yellow-400 transition duration-300">Noticias</a>
+                <a href="#admision" class="hover:text-yellow-400 transition duration-300">Admisión</a>
+                <a href="#contacto" class="hover:text-yellow-400 transition duration-300">Contacto</a>
+            </div>
+            <button class="md:hidden focus:outline-none" id="menu-toggle">
+                <i data-feather="menu"></i>
+            </button>
+        </div>
+        <div class="md:hidden hidden bg-blue-800 px-4 py-2" id="mobile-menu">
+            <a href="#inicio" class="block py-2 hover:text-yellow-400 transition duration-300">Inicio</a>
+            <a href="#carreras" class="block py-2 hover:text-yellow-400 transition duration-300">Carreras</a>
+            <a href="#noticias" class="block py-2 hover:text-yellow-400 transition duration-300">Noticias</a>
+            <a href="#admision" class="block py-2 hover:text-yellow-400 transition duration-300">Admisión</a>
+            <a href="#contacto" class="block py-2 hover:text-yellow-400 transition duration-300">Contacto</a>
+        </div>
+    </nav>
+
+    <section id="inicio" class="hero-bg text-white py-20 md:py-32">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Universidad de San Carlos Guatemala</h1>
+            <h2 class="text-2xl md:text-3xl font-semibold mb-8">Centro Universitario de Desarrollo - CUNDECH</h2>
+            <p class="text-xl mb-10 max-w-2xl mx-auto">Formando profesionales de excelencia con compromiso social</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#admision" class="bg-yellow-500 hover:bg-yellow-600 text-blue-900 font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105">Proceso de Admisión</a>
+                <a href="#contacto" class="bg-transparent hover:bg-blue-800 text-white font-bold py-3 px-6 border-2 border-white rounded-lg transition duration-300 transform hover:scale-105">Contáctanos</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-blue-900 mb-4">Sobre Nosotros</h2>
+                <div class="w-20 h-1 bg-yellow-500 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div data-aos="fade-right">
+                    <img src="img/about.jpg" alt="CUNDECH Universidad" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div data-aos="fade-left">
+                    <h3 class="text-2xl font-semibold text-blue-800 mb-4">Misión y Visión</h3>
+                    <p class="text-gray-700 mb-6">Somos el Centro Universitario responsable de la Educación Pública Superior en Chimaltenango, integrando investigación, docencia y extensión en la formación de profesionales comprometidos con la sociedad.</p>
+                    <p class="text-gray-700">Ser el Centro Universitario que promueva el desarrollo sostenible en las comunidades del departamento, reconocido por nuestros valores y excelencia académica.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="carreras" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-blue-900 mb-4">Nuestra Carrera</h2>
+                <div class="w-20 h-1 bg-yellow-500 mx-auto"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto mt-4">Ofrecemos programas académicos de calidad que responden a las necesidades del mercado laboral.</p>
+            </div>
+            <div class="flex justify-center">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 career-card max-w-2xl" data-aos="fade-up">
+                    <img src="img/career.jpg" alt="Administración de Empresas" class="w-full h-64 object-cover">
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-blue-800 mb-4">Administración de Empresas</h3>
+                        <p class="text-gray-600 mb-6 text-lg">Formamos profesionales capaces de dirigir y gestionar organizaciones con visión estratégica y responsabilidad social.</p>
+                        <div class="mb-6">
+                            <h4 class="text-lg font-semibold text-blue-700 mb-3">Perfil del Egresado:</h4>
+                            <ul class="text-gray-600 space-y-2">
+                                <li class="flex items-start"><i data-feather="check" class="text-yellow-500 mr-2 mt-1 w-4 h-4"></i><span>Gestión eficiente de recursos</span></li>
+                                <li class="flex items-start"><i data-feather="check" class="text-yellow-500 mr-2 mt-1 w-4 h-4"></i><span>Desarrollo de planes estratégicos</span></li>
+                                <li class="flex items-start"><i data-feather="check" class="text-yellow-500 mr-2 mt-1 w-4 h-4"></i><span>Análisis de mercados</span></li>
+                                <li class="flex items-start"><i data-feather="check" class="text-yellow-500 mr-2 mt-1 w-4 h-4"></i><span>Liderazgo de equipos</span></li>
+                            </ul>
+                        </div>
+                        <div class="bg-yellow-50 p-4 rounded-lg mb-6">
+                            <h4 class="text-lg font-semibold text-blue-700 mb-2">Duración: 5 años</h4>
+                            <p class="text-gray-600">Título: Licenciado en Administración de Empresas</p>
+                        </div>
+                        <a href="#contacto" class="bg-yellow-500 hover:bg-yellow-600 text-blue-900 font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105 inline-flex items-center">Más información<i data-feather="arrow-right" class="ml-2 w-5 h-5"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="noticias" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-blue-900 mb-4">Noticias y Eventos</h2>
+                <div class="w-20 h-1 bg-yellow-500 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300" data-aos="fade-up">
+                    <img src="img/news1.jpg" alt="Semana de Exámenes" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm text-yellow-600 font-semibold">Evento</span>
+                        <h3 class="text-xl font-bold text-blue-800 my-2">Semana de Exámenes</h3>
+                        <p class="text-gray-600 mb-4">Semana de Segundos Exámenes Parciales, Segundo Semestre 2025.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">29 Sep - 03 Oct 2025</span>
+                            <a href="#" class="text-blue-700 hover:text-blue-900 text-sm font-semibold transition duration-300">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <img src="img/news2.jpg" alt="Feria Mercadológica" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm text-yellow-600 font-semibold">Noticia</span>
+                        <h3 class="text-xl font-bold text-blue-800 my-2">Feria Mercadológica 2025</h3>
+                        <p class="text-gray-600 mb-4">Acompaña a nuestros estudiantes en la Feria Mercadológica 2025.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">17 de Octubre 2025</span>
+                            <a href="#" class="text-blue-700 hover:text-blue-900 text-sm font-semibold transition duration-300">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <img src="img/news3.jpg" alt="Becas Académicas" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm text-yellow-600 font-semibold">Convocatoria</span>
+                        <h3 class="text-xl font-bold text-blue-800 my-2">Becas Académicas 2026</h3>
+                        <p class="text-gray-600 mb-4">Conoce los requisitos y aplica a nuestro programa de becas.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">25 Octubre 2025</span>
+                            <a href="#" class="text-blue-700 hover:text-blue-900 text-sm font-semibold transition duration-300">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-10">
+                <a href="#" class="inline-block bg-blue-800 hover:bg-blue-900 text-white font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105">Ver todas las noticias</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="admision" class="py-16 bg-blue-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Proceso de Admisión</h2>
+                <div class="w-20 h-1 bg-yellow-500 mx-auto"></div>
+                <p class="max-w-2xl mx-auto mt-4">Conoce los pasos para formar parte de nuestra comunidad universitaria.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-blue-800 p-6 rounded-lg text-center hover:bg-blue-700 transition duration-300" data-aos="fade-up">
+                    <div class="bg-yellow-500 text-blue-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">1</div>
+                    <h3 class="text-xl font-semibold mb-3">Requisitos</h3>
+                    <p>Documentación necesaria para iniciar tu proceso de admisión.</p>
+                </div>
+                <div class="bg-blue-800 p-6 rounded-lg text-center hover:bg-blue-700 transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-yellow-500 text-blue-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">2</div>
+                    <h3 class="text-xl font-semibold mb-3">Inscripción</h3>
+                    <p>Completa el formulario de inscripción en línea o en nuestras oficinas.</p>
+                </div>
+                <div class="bg-blue-800 p-6 rounded-lg text-center hover:bg-blue-700 transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-yellow-500 text-blue-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">3</div>
+                    <h3 class="text-xl font-semibold mb-3">Examen de Admisión</h3>
+                    <p>Presenta el examen de admisión en la fecha programada.</p>
+                </div>
+                <div class="bg-blue-800 p-6 rounded-lg text-center hover:bg-blue-700 transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-yellow-500 text-blue-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">4</div>
+                    <h3 class="text-xl font-semibold mb-3">Matrícula</h3>
+                    <p>Completa tu proceso de matrícula y comienza tus estudios.</p>
+                </div>
+            </div>
+            <div class="mt-12 text-center">
+                <a href="#" class="inline-block bg-yellow-500 hover:bg-yellow-600 text-blue-900 font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105 mr-4">Descargar requisitos</a>
+                <a href="#" class="inline-block bg-transparent hover:bg-blue-700 text-white font-bold py-3 px-6 border-2 border-white rounded-lg transition duration-300 transform hover:scale-105">Inscripción en línea</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-blue-900 mb-4">Contáctanos</h2>
+                <div class="w-20 h-1 bg-yellow-500 mx-auto"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto mt-4">Estamos aquí para responder tus preguntas.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div data-aos="fade-right">
+                    <h3 class="text-2xl font-semibold text-blue-800 mb-6">Información de Contacto</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <i data-feather="map-pin" class="text-yellow-600 mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Dirección</h4>
+                                <p class="text-gray-600">1era Calle sector B La Alameda zona 9 Chimaltenango, Interior Escuela Nacional Pedro Molina</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i data-feather="phone" class="text-yellow-600 mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Teléfonos</h4>
+                                <p class="text-gray-600">+502 7791-4319<br>+502 7839-1698</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i data-feather="mail" class="text-yellow-600 mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Correo Electrónico</h4>
+                                <p class="text-gray-600">info@cundech.edu.gt<br>admisiones@cundech.edu.gt</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-left">
+                    <h3 class="text-2xl font-semibold text-blue-800 mb-6">Formulario de Contacto</h3>
+                    <form action="https://formspree.io/f/your_form_id_here" method="POST" class="space-y-4">
+                        <div>
+                            <label for="nombre" class="block text-gray-700 font-medium mb-2">Nombre Completo</label>
+                            <input type="text" id="nombre" name="nombre" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 transition duration-300" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 transition duration-300" required>
+                        </div>
+                        <div>
+                            <label for="telefono" class="block text-gray-700 font-medium mb-2">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 transition duration-300">
+                        </div>
+                        <div>
+                            <label for="asunto" class="block text-gray-700 font-medium mb-2">Asunto</label>
+                            <select id="asunto" name="asunto" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 transition duration-300">
+                                <option>Información general</option>
+                                <option>Admisiones</option>
+                                <option>Becas</option>
+                                <option>Administración de Empresas</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="mensaje" class="block text-gray-700 font-medium mb-2">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 transition duration-300" required></textarea>
+                        </div>
+                        <button type="submit" class="bg-yellow-500 hover:bg-yellow-600 text-blue-900 font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105 w-full">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="h-96 w-full">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.78907447884!2d-90.8267127247096!3d14.658973377040994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85896d2e4218e2e1%3A0x712c63d7945f779d!2sPedro%20Molina!5e0!3m2!1ses!2sgt!4v1697912345678!5m2!1ses!2sgt" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <footer class="bg-blue-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center"><i data-feather="book-open" class="mr-2 text-yellow-400"></i> AdmonCundech</h3>
+                    <p class="text-blue-200">Formando profesionales de excelencia con compromiso social.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Enlaces Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#inicio" class="text-blue-200 hover:text-yellow-400 transition duration-300">Inicio</a></li>
+                        <li><a href="#carreras" class="text-blue-200 hover:text-yellow-400 transition duration-300">Carreras</a></li>
+                        <li><a href="#noticias" class="text-blue-200 hover:text-yellow-400 transition duration-300">Noticias</a></li>
+                        <li><a href="#admision" class="text-blue-200 hover:text-yellow-400 transition duration-300">Admisión</a></li>
+                        <li><a href="#contacto" class="text-blue-200 hover:text-yellow-400 transition duration-300">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Carrera</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#carreras" class="text-blue-200 hover:text-yellow-400 transition duration-300">Administración de Empresas</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Boletín Informativo</h4>
+                    <p class="text-blue-200 mb-4">Suscríbete para recibir noticias y actualizaciones.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Tu correo" class="px-4 py-2 rounded-l-lg focus:outline-none text-gray-800 w-full">
+                        <button type="submit" class="bg-yellow-500 hover:bg-yellow-600 text-blue-900 px-4 py-2 rounded-r-lg transition duration-300"><i data-feather="send"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-blue-800 mt-12 pt-8 text-center text-blue-300">
+                <p>© 2025 AdmonCundech. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="fixed bottom-6 right-6 z-50">
+        <div class="flex flex-col space-y-3">
+            <a href="#contacto" class="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition duration-300 transform hover:scale-110 flex items-center justify-center"><i data-feather="message-circle"></i></a>
+            <a href="tel:+50277914319" class="bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-lg transition duration-300 transform hover:scale-110 flex items-center justify-center"><i data-feather="phone"></i></a>
+            <a href="#inicio" class="bg-yellow-500 hover:bg-yellow-600 text-blue-900 p-4 rounded-full shadow-lg transition duration-300 transform hover:scale-110 flex items-center justify-center"><i data-feather="arrow-up"></i></a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
+            feather.replace();
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) { e.preventDefault(); document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' }); });
+            });
+        });
+    </script>
+</body>
+</html>
